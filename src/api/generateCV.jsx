@@ -6,7 +6,7 @@ const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 const generateCV = async (userInput) => {
   const prompt = `
 You are a resume expert AI.
-Return ONLY valid JSON based on this input — no explanation or text outside JSON.
+Return ONLY valid JSONb  based on this input — no explanation or text outside JSON.
 
 Format:
 {
