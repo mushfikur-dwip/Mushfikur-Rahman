@@ -1,8 +1,3 @@
 [
-  "Simulate a conversation between [character 1] and [character 2] discussing [topic].",
-  "Create a plan for a [type of event] for [number] people, including [specific requirement].",
-  "Design a [type of workout] plan for [fitness level] individuals aiming to [goal] in [timeframe].",
-  "Write a detailed CV in JSON format for [full_name], a [software engineering role] based in [city, country] with [X years] of experience in [technologies, frameworks, or fields].",
-  "Write a detailed CV in JSON format for [full_name], a [software engineering role] based in [city, country] with [X years] of experience in [technologies, frameworks, or fields].",
-  "[Write] a detailed CV in JSON format for [full_name], a [software engineering role] based in [city, country] with [X years] of experience in [technologies, frameworks, or fields]."
+  "Generate a professional CV using the following information. The format should be clean, modern, and ATS-friendly. The tone should be formal and confident. Create the CV using the details below: [Full_Name] , [Phone_Number] ,[Email_Address],[Address],[Target_Position],[Professional_Summary] Education Qualification[Education] Work Experience:[Job_Title_1,Company_1,Duration_1,Responsibility_1] , Skills:[Skill_1, Skill_2, Skill_3……] Achievements / Certifications: [Achievement_1, Achievement_2], Projects: [Project_1, Project_2]"
 ]
