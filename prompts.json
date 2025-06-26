@@ -1,0 +1,8 @@
+[
+  "Simulate a conversation between [character 1] and [character 2] discussing [topic].",
+  "Create a plan for a [type of event] for [number] people, including [specific requirement].",
+  "Design a [type of workout] plan for [fitness level] individuals aiming to [goal] in [timeframe].",
+  "Write a detailed CV in JSON format for [full_name], a [software engineering role] based in [city, country] with [X years] of experience in [technologies, frameworks, or fields].",
+  "Write a detailed CV in JSON format for [full_name], a [software engineering role] based in [city, country] with [X years] of experience in [technologies, frameworks, or fields].",
+  "[Write] a detailed CV in JSON format for [full_name], a [software engineering role] based in [city, country] with [X years] of experience in [technologies, frameworks, or fields]."
+]

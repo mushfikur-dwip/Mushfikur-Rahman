@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from "react";
 
-const prompts = [
-    "Simulate a conversation between [character 1] and [character 2] discussing [topic].",
-    "Create a plan for a [type of event] for [number] people, including [specific requirement].",
-    "Design a [type of workout] plan for [fitness level] individuals aiming to [goal] in [timeframe].",
-    "Write a detailed CV in JSON format for [full_name], a [software engineering role] based in [city, country] with [X years] of experience in [technologies, frameworks, or fields]. Include sections for contact information, professional summary, key skills, work experience (with bullet points), education, certifications, and relevant projects."
-];
+// const prompts = [
+//     "Simulate a conversation between [character 1] and [character 2] discussing [topic].",
+//     "Create a plan for a [type of event] for [number] people, including [specific requirement].",
+//     "Design a [type of workout] plan for [fitness level] individuals aiming to [goal] in [timeframe].",
+//     "Write a detailed CV in JSON format for [full_name], a [software engineering role] based in [city, country] with [X years] of experience in [technologies, frameworks, or fields]. Include sections for contact information, professional summary, key skills, work experience (with bullet points), education, certifications, and relevant projects."
+// ];
 
 export default function InputForm({ userInput, setUserInput, onGenerate }) {
     const [selectedPrompt, setSelectedPrompt] = useState("");
     const [placeholders, setPlaceholders] = useState([]);
     const [values, setValues] = useState({});
     const [finalPrompt, setFinalPrompt] = useState("");
+    const [prompts, setPrompts] = useState([]);
+
+    useEffect(() => {
+        fetch("/prompts.json")
+            .then((res) => res.json())
+            .then((data) => setPrompts(data))
+            .catch((err) => console.error("Failed to load prompts", err));
+    }, []);
 
     const extractPlaceholders = (prompt) => {
         if (!prompt || typeof prompt !== "string") return;
