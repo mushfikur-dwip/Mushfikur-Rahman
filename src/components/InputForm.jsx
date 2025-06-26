@@ -6,6 +6,17 @@ export default function InputForm({ userInput, setUserInput, onGenerate, loading
             <label className="block mb-2 font-semibold text-gray-700 text-lg">
                 ✍️ Write About Yourself
             </label>
+            <p>name,
+                title,
+                location,
+                links,
+                about,
+                experience,
+                education,
+                skills,
+                projects,
+                certifications,
+                languages</p>
             <textarea
                 className="w-full h-40 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-700"
                 placeholder="Write your background, experience, skills, and career story..."

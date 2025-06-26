@@ -7,7 +7,6 @@ const CVPreview = ({ cvData }) => {
     name,
     title,
     location,
-    imageUrl,
     links,
     about,
     experience,
