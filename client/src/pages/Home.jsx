@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import generateCV from "../api/generateCV";
 import CVPreview from "../components/CVPreview";
 import InputForm from "../components/InputForm";
+import LinkedInScraper from "../components/LinkedInScraper";
 
 const Home = () => {
     const [userInput, setUserInput] = useState("");
@@ -15,6 +16,9 @@ const Home = () => {
 
     return (
         <div className="min-h-screen bg-gray-100 p-6">
+            <div>
+                <LinkedInScraper />
+           </div>
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-3xl font-bold text-center mb-6">🎯 AI CV Generator</h1>
                 <InputForm
